@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1046905420976",
+    "project_id": "repo-14bf7",
+    "storage_bucket": "repo-14bf7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046905420976:android:3a962c372bdc5cea38cf75",
+        "android_client_info": {
+          "package_name": "com.room.repo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCorDUb8RGUcd85oqvNzJq6Ou64xckNOv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

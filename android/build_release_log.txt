@@ -1,0 +1,336 @@
+Starting a Gradle Daemon, 1 incompatible and 1 stopped Daemons could not be reused, use --status for details
+> Task :gradle:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle:compileKotlin UP-TO-DATE
+> Task :gradle:compileJava NO-SOURCE
+> Task :gradle:compileGroovy NO-SOURCE
+> Task :gradle:pluginDescriptors UP-TO-DATE
+> Task :gradle:processResources
+> Task :gradle:classes
+> Task :gradle:jar
+
+> Configure project :app
+Warning: Flutter support for your project's Kotlin version (1.9.24) will soon be dropped. Please upgrade your Kotlin version to a version of at least 2.1.0 soon.
+Alternatively, use the flag "--android-skip-build-dependency-validation" to bypass this check.
+
+Potential fix: Your project's KGP version is typically defined in the plugins block of the `settings.gradle` file (C:\Users\tella\member_dashboard_app\android/settings.gradle), by a plugin with the id of org.jetbrains.kotlin.android. 
+If you don't see a plugins block, your project was likely created with an older template version, in which case it is most likely defined in the top-level build.gradle file (C:\Users\tella\member_dashboard_app\android/build.gradle) by the ext.kotlin_version property.
+
+
+> Configure project :url_launcher_android
+Warning: The plugin url_launcher_android requires Android SDK version 36 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+Your project is configured to compile against Android SDK 35, but the following plugin(s) require to be compiled against a higher Android SDK version:
+- url_launcher_android compiles against Android SDK 36
+Fix this issue by compiling against the highest Android SDK version (they are backward compatible).
+Add the following to C:\Users\tella\member_dashboard_app\android\app\build.gradle.kts:
+
+    android {
+        compileSdk = 36
+        ...
+    }
+WARNING: We recommend using a newer Android Gradle plugin to use compileSdk = 36
+
+This Android Gradle plugin (8.7.3) was tested up to compileSdk = 35.
+
+You are strongly encouraged to update your project to use a newer
+Android Gradle plugin that has been tested with compileSdk = 36.
+
+If you are already using the latest version of the Android Gradle plugin,
+you may need to wait until a newer version with support for compileSdk = 36 is available.
+
+For more information refer to the compatibility table:
+https://d.android.com/r/tools/api-level-support
+
+To suppress this warning, add/update
+    android.suppressUnsupportedCompileSdk=36
+to this project's gradle.properties.
+
+> Task :app:ReleaseMinSdkCheck
+> Task :app:buildKotlinToolingMetadata UP-TO-DATE
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+> Task :app:compileFlutterBuildRelease
+> Task :app:packJniLibsflutterBuildRelease
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :cloud_firestore:preBuild UP-TO-DATE
+> Task :cloud_firestore:preReleaseBuild UP-TO-DATE
+> Task :cloud_firestore:writeReleaseAarMetadata UP-TO-DATE
+> Task :firebase_auth:preBuild UP-TO-DATE
+> Task :firebase_auth:preReleaseBuild UP-TO-DATE
+> Task :firebase_auth:writeReleaseAarMetadata UP-TO-DATE
+> Task :firebase_core:preBuild UP-TO-DATE
+> Task :firebase_core:preReleaseBuild UP-TO-DATE
+> Task :firebase_core:writeReleaseAarMetadata UP-TO-DATE
+> Task :url_launcher_android:preBuild UP-TO-DATE
+> Task :url_launcher_android:preReleaseBuild UP-TO-DATE
+> Task :url_launcher_android:writeReleaseAarMetadata UP-TO-DATE
+> Task :app:checkReleaseAarMetadata UP-TO-DATE
+> Task :app:cleanMergeReleaseAssets
+> Task :app:mergeReleaseShaders UP-TO-DATE
+> Task :app:compileReleaseShaders NO-SOURCE
+> Task :app:generateReleaseAssets UP-TO-DATE
+> Task :cloud_firestore:mergeReleaseShaders UP-TO-DATE
+> Task :cloud_firestore:compileReleaseShaders NO-SOURCE
+> Task :cloud_firestore:generateReleaseAssets UP-TO-DATE
+> Task :cloud_firestore:packageReleaseAssets UP-TO-DATE
+> Task :firebase_auth:mergeReleaseShaders UP-TO-DATE
+> Task :firebase_auth:compileReleaseShaders NO-SOURCE
+> Task :firebase_auth:generateReleaseAssets UP-TO-DATE
+> Task :firebase_auth:packageReleaseAssets UP-TO-DATE
+> Task :firebase_core:mergeReleaseShaders UP-TO-DATE
+> Task :firebase_core:compileReleaseShaders NO-SOURCE
+> Task :firebase_core:generateReleaseAssets UP-TO-DATE
+> Task :firebase_core:packageReleaseAssets UP-TO-DATE
+> Task :url_launcher_android:mergeReleaseShaders UP-TO-DATE
+> Task :url_launcher_android:compileReleaseShaders NO-SOURCE
+> Task :url_launcher_android:generateReleaseAssets UP-TO-DATE
+> Task :url_launcher_android:packageReleaseAssets UP-TO-DATE
+> Task :app:mergeReleaseAssets
+> Task :app:copyFlutterAssetsRelease
+> Task :app:generateReleaseResValues UP-TO-DATE
+> Task :app:processReleaseGoogleServices UP-TO-DATE
+> Task :cloud_firestore:generateReleaseResValues UP-TO-DATE
+> Task :cloud_firestore:generateReleaseResources UP-TO-DATE
+> Task :cloud_firestore:packageReleaseResources UP-TO-DATE
+> Task :firebase_auth:generateReleaseResValues UP-TO-DATE
+> Task :firebase_auth:generateReleaseResources UP-TO-DATE
+> Task :firebase_auth:packageReleaseResources UP-TO-DATE
+> Task :firebase_core:generateReleaseResValues UP-TO-DATE
+> Task :firebase_core:generateReleaseResources UP-TO-DATE
+> Task :firebase_core:packageReleaseResources UP-TO-DATE
+> Task :url_launcher_android:generateReleaseResValues UP-TO-DATE
+> Task :url_launcher_android:generateReleaseResources UP-TO-DATE
+> Task :url_launcher_android:packageReleaseResources UP-TO-DATE
+> Task :app:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :app:generateReleaseResources UP-TO-DATE
+> Task :app:mergeReleaseResources UP-TO-DATE
+> Task :app:packageReleaseResources UP-TO-DATE
+> Task :app:parseReleaseLocalResources UP-TO-DATE
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease UP-TO-DATE
+> Task :cloud_firestore:extractDeepLinksRelease UP-TO-DATE
+> Task :cloud_firestore:processReleaseManifest UP-TO-DATE
+> Task :firebase_auth:extractDeepLinksRelease UP-TO-DATE
+> Task :firebase_auth:processReleaseManifest UP-TO-DATE
+> Task :firebase_core:extractDeepLinksRelease UP-TO-DATE
+> Task :firebase_core:processReleaseManifest UP-TO-DATE
+> Task :url_launcher_android:extractDeepLinksRelease UP-TO-DATE
+> Task :url_launcher_android:processReleaseManifest UP-TO-DATE
+
+> Task :app:processReleaseMainManifest
+package="com.room.repo" found in source AndroidManifest.xml: C:\Users\tella\member_dashboard_app\android\app\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.room.repo" from the source AndroidManifest.xml: C:\Users\tella\member_dashboard_app\android\app\src\main\AndroidManifest.xml.
+
+> Task :app:outputReleaseAppLinkSettings
+> Task :app:processReleaseManifest
+> Task :cloud_firestore:parseReleaseLocalResources UP-TO-DATE
+> Task :cloud_firestore:generateReleaseRFile UP-TO-DATE
+> Task :firebase_auth:parseReleaseLocalResources UP-TO-DATE
+> Task :firebase_auth:generateReleaseRFile UP-TO-DATE
+> Task :firebase_core:parseReleaseLocalResources UP-TO-DATE
+> Task :firebase_core:generateReleaseRFile UP-TO-DATE
+> Task :url_launcher_android:parseReleaseLocalResources UP-TO-DATE
+> Task :url_launcher_android:generateReleaseRFile UP-TO-DATE
+> Task :cloud_firestore:generateReleaseBuildConfig UP-TO-DATE
+> Task :cloud_firestore:javaPreCompileRelease UP-TO-DATE
+> Task :firebase_core:generateReleaseBuildConfig UP-TO-DATE
+> Task :firebase_core:javaPreCompileRelease UP-TO-DATE
+> Task :firebase_core:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :firebase_core:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :cloud_firestore:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :cloud_firestore:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :firebase_auth:generateReleaseBuildConfig UP-TO-DATE
+> Task :firebase_auth:javaPreCompileRelease UP-TO-DATE
+> Task :firebase_auth:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :firebase_auth:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :url_launcher_android:generateReleaseBuildConfig UP-TO-DATE
+> Task :url_launcher_android:javaPreCompileRelease UP-TO-DATE
+> Task :url_launcher_android:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :url_launcher_android:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :app:javaPreCompileRelease UP-TO-DATE
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :cloud_firestore:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :cloud_firestore:processReleaseJavaRes NO-SOURCE
+> Task :cloud_firestore:createFullJarRelease UP-TO-DATE
+> Task :cloud_firestore:extractProguardFiles UP-TO-DATE
+> Task :firebase_core:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :app:processReleaseManifestForPackage
+> Task :firebase_core:processReleaseJavaRes NO-SOURCE
+> Task :firebase_core:createFullJarRelease UP-TO-DATE
+> Task :firebase_core:extractProguardFiles UP-TO-DATE
+> Task :firebase_core:generateReleaseLintModel UP-TO-DATE
+> Task :firebase_core:prepareLintJarForPublish UP-TO-DATE
+> Task :cloud_firestore:generateReleaseLintModel UP-TO-DATE
+> Task :cloud_firestore:prepareLintJarForPublish UP-TO-DATE
+> Task :firebase_auth:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :firebase_auth:processReleaseJavaRes NO-SOURCE
+> Task :firebase_auth:createFullJarRelease UP-TO-DATE
+> Task :firebase_auth:extractProguardFiles UP-TO-DATE
+> Task :firebase_auth:generateReleaseLintModel UP-TO-DATE
+> Task :firebase_auth:prepareLintJarForPublish UP-TO-DATE
+> Task :url_launcher_android:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :url_launcher_android:processReleaseJavaRes NO-SOURCE
+> Task :url_launcher_android:createFullJarRelease UP-TO-DATE
+> Task :url_launcher_android:extractProguardFiles UP-TO-DATE
+> Task :url_launcher_android:generateReleaseLintModel UP-TO-DATE
+> Task :url_launcher_android:prepareLintJarForPublish UP-TO-DATE
+> Task :cloud_firestore:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :cloud_firestore:mergeReleaseNativeLibs NO-SOURCE
+> Task :cloud_firestore:stripReleaseDebugSymbols NO-SOURCE
+> Task :cloud_firestore:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :cloud_firestore:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :cloud_firestore:extractReleaseAnnotations UP-TO-DATE
+> Task :cloud_firestore:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :cloud_firestore:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :cloud_firestore:prepareReleaseArtProfile UP-TO-DATE
+> Task :cloud_firestore:mergeReleaseJavaResource UP-TO-DATE
+> Task :cloud_firestore:syncReleaseLibJars UP-TO-DATE
+> Task :cloud_firestore:bundleReleaseLocalLintAar
+> Task :firebase_auth:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :firebase_auth:mergeReleaseNativeLibs NO-SOURCE
+> Task :firebase_auth:stripReleaseDebugSymbols NO-SOURCE
+> Task :firebase_auth:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :firebase_auth:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :firebase_auth:extractReleaseAnnotations UP-TO-DATE
+> Task :firebase_auth:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :firebase_auth:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :firebase_auth:prepareReleaseArtProfile UP-TO-DATE
+> Task :firebase_auth:mergeReleaseJavaResource UP-TO-DATE
+> Task :firebase_auth:syncReleaseLibJars UP-TO-DATE
+> Task :firebase_auth:bundleReleaseLocalLintAar
+> Task :firebase_core:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :firebase_core:mergeReleaseNativeLibs NO-SOURCE
+> Task :firebase_core:stripReleaseDebugSymbols NO-SOURCE
+> Task :firebase_core:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :firebase_core:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :firebase_core:extractReleaseAnnotations UP-TO-DATE
+> Task :firebase_core:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :firebase_core:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :firebase_core:prepareReleaseArtProfile UP-TO-DATE
+> Task :firebase_core:mergeReleaseJavaResource UP-TO-DATE
+> Task :firebase_core:syncReleaseLibJars UP-TO-DATE
+> Task :firebase_core:bundleReleaseLocalLintAar
+> Task :url_launcher_android:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :url_launcher_android:mergeReleaseNativeLibs NO-SOURCE
+> Task :url_launcher_android:stripReleaseDebugSymbols NO-SOURCE
+> Task :url_launcher_android:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :url_launcher_android:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :url_launcher_android:extractReleaseAnnotations UP-TO-DATE
+> Task :url_launcher_android:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :url_launcher_android:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :url_launcher_android:prepareReleaseArtProfile UP-TO-DATE
+> Task :url_launcher_android:mergeReleaseJavaResource UP-TO-DATE
+> Task :url_launcher_android:syncReleaseLibJars UP-TO-DATE
+> Task :url_launcher_android:bundleReleaseLocalLintAar
+> Task :firebase_core:writeReleaseLintModelMetadata UP-TO-DATE
+> Task :cloud_firestore:writeReleaseLintModelMetadata UP-TO-DATE
+> Task :firebase_auth:writeReleaseLintModelMetadata UP-TO-DATE
+> Task :url_launcher_android:writeReleaseLintModelMetadata UP-TO-DATE
+> Task :cloud_firestore:generateReleaseLintVitalModel UP-TO-DATE
+> Task :firebase_auth:generateReleaseLintVitalModel UP-TO-DATE
+> Task :firebase_core:generateReleaseLintVitalModel UP-TO-DATE
+> Task :url_launcher_android:generateReleaseLintVitalModel UP-TO-DATE
+> Task :app:processReleaseResources
+> Task :app:configureCMakeRelease[arm64-v8a]
+> Task :app:compileReleaseKotlin UP-TO-DATE
+> Task :app:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :app:generateReleaseLintVitalReportModel
+> Task :app:buildCMakeRelease[arm64-v8a]
+> Task :app:configureCMakeRelease[armeabi-v7a]
+> Task :app:buildCMakeRelease[armeabi-v7a]
+> Task :app:configureCMakeRelease[x86_64]
+> Task :app:buildCMakeRelease[x86_64]
+> Task :app:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :cloud_firestore:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :firebase_auth:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :firebase_core:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :url_launcher_android:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :app:mergeReleaseNativeLibs UP-TO-DATE
+> Task :app:stripReleaseDebugSymbols UP-TO-DATE
+> Task :app:extractReleaseNativeSymbolTables UP-TO-DATE
+> Task :app:mergeReleaseNativeDebugMetadata UP-TO-DATE
+> Task :cloud_firestore:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :firebase_auth:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :firebase_core:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :url_launcher_android:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :app:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :app:mergeReleaseArtProfile UP-TO-DATE
+> Task :app:expandReleaseArtProfileWildcards UP-TO-DATE
+> Task :app:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :app:processReleaseJavaRes
+> Task :app:mergeReleaseJavaResource UP-TO-DATE
+> Task :app:mergeReleaseStartupProfile UP-TO-DATE
+> Task :app:extractReleaseVersionControlInfo UP-TO-DATE
+> Task :app:compressReleaseAssets
+> Task :app:collectReleaseDependencies
+> Task :app:sdkReleaseDependencyData
+> Task :app:validateSigningRelease UP-TO-DATE
+> Task :app:writeReleaseAppMetadata UP-TO-DATE
+> Task :app:writeReleaseSigningConfigVersions UP-TO-DATE
+> Task :cloud_firestore:bundleReleaseAar
+> Task :cloud_firestore:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :cloud_firestore:mergeReleaseResources UP-TO-DATE
+> Task :firebase_core:compileReleaseLibraryResources UP-TO-DATE
+> Task :cloud_firestore:verifyReleaseResources UP-TO-DATE
+> Task :cloud_firestore:assembleRelease
+> Task :firebase_auth:bundleReleaseAar
+> Task :firebase_auth:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :firebase_auth:mergeReleaseResources UP-TO-DATE
+> Task :firebase_auth:verifyReleaseResources UP-TO-DATE
+> Task :firebase_auth:assembleRelease
+> Task :firebase_core:bundleReleaseAar
+> Task :firebase_core:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :firebase_core:mergeReleaseResources UP-TO-DATE
+> Task :firebase_core:verifyReleaseResources UP-TO-DATE
+> Task :firebase_core:assembleRelease
+> Task :url_launcher_android:bundleReleaseAar
+> Task :url_launcher_android:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :url_launcher_android:mergeReleaseResources UP-TO-DATE
+> Task :app:convertLinkedResourcesToProtoRelease
+> Task :url_launcher_android:verifyReleaseResources UP-TO-DATE
+> Task :url_launcher_android:assembleRelease
+> Task :cloud_firestore:lintVitalAnalyzeRelease
+> Task :firebase_core:lintVitalAnalyzeRelease
+> Task :firebase_auth:lintVitalAnalyzeRelease
+> Task :url_launcher_android:lintVitalAnalyzeRelease
+
+> Task :app:minifyReleaseWithR8 FAILED
+ERROR: Missing classes detected while running R8. Please add the missing classes or apply additional keep rules that are generated in C:\Users\tella\member_dashboard_app\build\app\outputs\mapping\release\missing_rules.txt.
+ERROR: R8: Missing class com.google.android.play.core.splitcompat.SplitCompatApplication (referenced from: void io.flutter.embedding.android.FlutterPlayStoreSplitApplication.<init>() and 2 other contexts)
+Missing class com.google.android.play.core.splitinstall.SplitInstallException (referenced from: void io.flutter.embedding.engine.deferredcomponents.PlayStoreDeferredComponentManager.lambda$installDeferredComponent$1(int, java.lang.String, java.lang.Exception))
+Missing class com.google.android.play.core.splitinstall.SplitInstallManager (referenced from: com.google.android.play.core.splitinstall.SplitInstallManager io.flutter.embedding.engine.deferredcomponents.PlayStoreDeferredComponentManager.splitInstallManager and 5 other contexts)
+Missing class com.google.android.play.core.splitinstall.SplitInstallManagerFactory (referenced from: void io.flutter.embedding.engine.deferredcomponents.PlayStoreDeferredComponentManager.<init>(android.content.Context, io.flutter.embedding.engine.FlutterJNI))
+Missing class com.google.android.play.core.splitinstall.SplitInstallRequest$Builder (referenced from: void io.flutter.embedding.engine.deferredcomponents.PlayStoreDeferredComponentManager.installDeferredComponent(int, java.lang.String))
+Missing class com.google.android.play.core.splitinstall.SplitInstallRequest (referenced from: void io.flutter.embedding.engine.deferredcomponents.PlayStoreDeferredComponentManager.installDeferredComponent(int, java.lang.String))
+Missing class com.google.android.play.core.splitinstall.SplitInstallSessionState (referenced from: void io.flutter.embedding.engine.deferredcomponents.PlayStoreDeferredComponentManager$FeatureInstallStateUpdatedListener.onStateUpdate(com.google.android.play.core.splitinstall.SplitInstallSessionState) and 1 other context)
+Missing class com.google.android.play.core.splitinstall.SplitInstallStateUpdatedListener (referenced from: void io.flutter.embedding.engine.deferredcomponents.PlayStoreDeferredComponentManager.<init>(android.content.Context, io.flutter.embedding.engine.FlutterJNI) and 2 other contexts)
+Missing class com.google.android.play.core.tasks.OnFailureListener (referenced from: void io.flutter.embedding.engine.deferredcomponents.PlayStoreDeferredComponentManager.installDeferredComponent(int, java.lang.String))
+Missing class com.google.android.play.core.tasks.OnSuccessListener (referenced from: void io.flutter.embedding.engine.deferredcomponents.PlayStoreDeferredComponentManager.installDeferredComponent(int, java.lang.String))
+Missing class com.google.android.play.core.tasks.Task (referenced from: void io.flutter.embedding.engine.deferredcomponents.PlayStoreDeferredComponentManager.installDeferredComponent(int, java.lang.String) and 1 other context)
+
+> Task :app:lintVitalAnalyzeRelease
+
+[Incubating] Problems report is available at: file:///C:/Users/tella/member_dashboard_app/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:minifyReleaseWithR8'.
+> A failure occurred while executing com.android.build.gradle.internal.tasks.R8Task$R8Runnable
+   > Compilation failed to complete
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 52s
+214 actionable tasks: 41 executed, 173 up-to-date
